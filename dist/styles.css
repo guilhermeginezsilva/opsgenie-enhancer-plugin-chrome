@@ -1,0 +1,46 @@
+.custom-textarea {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: vertical !important; /* Allows the user to resize the textarea vertically */
+    min-height: 50px; /* Minimum height for the textarea */
+    background-color: inherit; /* Ensures the background color adapts to the current mode */
+    color: inherit; /* Ensures the text color adapts to the current mode */
+    border: 1px solid currentColor; /* Sets the border color to the current text color */
+    pointer-events: auto; /* Ensures the textarea is interactive */
+  }
+  
+  .dark-mode .custom-textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  .light-mode .custom-textarea {
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc;
+  }
+
+  .tooltip {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    margin-bottom: 5px;
+    font-size: 12px;
+    width: auto;
+    white-space: nowrap;
+    z-index: 10;
+    transform: translateX(-105%) translateY(-10%);
+    opacity: 0; /* Start with the tooltip hidden */
+    transition: opacity 0.3s ease-in-out; /* Add transitions */
+  }
+
+  .tooltip.show {
+    opacity: 1; /* Show the tooltip */
+  } 
