@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Opsgenie Note Modifier",
+  "name": "Opsgenie Alert Note Enhancer",
   "version": "1.0",
   "permissions": [
     "activeTab", 
     "scripting",
     "storage"
   ],
-  "description": "Modify the Opsgenie alert note input field.",
+  "description": "Enhance the Opsgenie alert note.",
   "content_scripts": [
     {
       "matches": ["*://*.opsgenie.com/*"],
